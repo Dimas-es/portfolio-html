@@ -1,0 +1,313 @@
+/* Navbar Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(90deg, #000000, #333333); /* Perbaikan warna */
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem; /* Ukuran font lebih kecil */
+    font-weight: 500; /* Kurangi ketebalan */
+}
+
+nav ul {
+    display: flex;
+    gap: 1.2rem; /* Kurangi jarak */
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    transition: color 0.3s, transform 0.3s; /* Tambahkan animasi transform */
+}
+
+nav ul li a:hover {
+    color: #00aaff;
+    transform: scale(1.1); /* Efek zoom saat hover */
+}
+
+/* Right Section (Buttons & Menu) */
+nav div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    text-align: center;
+}
+
+.mobile-menu ul li a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.mobile-menu button {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    .mobile-menu {
+        display: flex;
+    }
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 4rem 1rem; /* Tambahkan padding */
+    background: linear-gradient(135deg, #007BFF, #004080); /* Gradasi warna */
+    color: #fff;
+    border-bottom-left-radius: 50px; /* Tambahkan sudut melengkung */
+    border-bottom-right-radius: 50px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+}
+
+header img {
+    border-radius: 50%;
+    margin-bottom: 2rem; /* Tambahkan jarak */
+    width: 150px; /* Ukuran gambar */
+    height: 150px;
+    object-fit: cover; /* Pastikan gambar proporsional */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Tambahkan bayangan */
+}
+
+header h3 {
+    font-size: 2rem; /* Ukuran font lebih besar */
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-weight: 600; /* Tambahkan ketebalan */
+}
+
+header h1 {
+    font-size: 2.5rem; /* Ukuran font lebih besar */
+    margin-bottom: 1.5rem; /* Tambahkan jarak */
+    font-weight: 700; /* Tambahkan ketebalan */
+    line-height: 1.4; /* Tambahkan tinggi baris */
+}
+
+header p {
+    font-size: 1.2rem; /* Ukuran font lebih besar */
+    margin-bottom: 3rem; /* Tambahkan jarak */
+    line-height: 1.8; /* Tambahkan tinggi baris */
+    max-width: 600px; /* Batas lebar teks */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; /* Tambahkan jarak antar tombol */
+}
+
+header div a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #0056b3; /* Warna tombol */
+    padding: 0.8rem 1.5rem; /* Tambahkan padding */
+    border-radius: 30px; /* Sudut lebih melengkung */
+    font-size: 1rem; /* Ukuran font */
+    font-weight: 600; /* Tambahkan ketebalan */
+    transition: background-color 0.3s, transform 0.3s; /* Tambahkan animasi transform */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+}
+
+header div a:hover {
+    background-color: #003f7f; /* Warna hover lebih gelap */
+    transform: translateY(-5px); /* Efek naik saat hover */
+}
+
+header div a img {
+    margin-left: 0.5rem; /* Jarak antara teks dan ikon */
+    vertical-align: middle; /* Menyelaraskan ikon dengan teks */
+    width: 20px; /* Ukuran ikon */
+    height: 20px;
+}
+
+
+/* Styling untuk About Section */
+#about {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 100px 20px; /* Tambahkan padding */
+    text-align: center;
+    background: #f9f9f9; /* Tambahkan warna latar */
+    border-radius: 10px; /* Tambahkan sudut melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+}
+
+/* Judul utama */
+#about h4 {
+    color: #6c63ff;
+    font-size: 20px; /* Ukuran font lebih besar */
+    font-weight: 700; /* Tambahkan ketebalan */
+    text-transform: uppercase;
+    margin-bottom: 10px; /* Tambahkan jarak */
+}
+
+#about h2 {
+    font-size: 38px; /* Ukuran font lebih besar */
+    font-weight: 800; /* Tambahkan ketebalan */
+    margin-bottom: 50px; /* Tambahkan jarak */
+}
+
+/* Layout utama */
+#about > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* Tambahkan jarak */
+}
+
+/* Gambar profil */
+#about > div > div:first-child img {
+    width: 100%;
+    max-width: 350px; /* Ukuran maksimum lebih besar */
+    border-radius: 15px; /* Sudut lebih melengkung */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Tambahkan bayangan */
+}
+
+/* Konten teks */
+#about > div > div:last-child {
+    max-width: 600px;
+    text-align: left;
+}
+
+/* Paragraf deskripsi */
+#about p {
+    font-size: 18px;
+    color: #555; /* Warna teks lebih gelap */
+    line-height: 1.8; /* Tambahkan tinggi baris */
+    margin-bottom: 25px; /* Tambahkan jarak */
+}
+
+/* Subjudul */
+#about h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+/* Daftar detail */
+#about ul {
+    list-style: none;
+    padding: 0;
+}
+
+#about ul li {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Tambahkan jarak */
+    background: #ffffff; /* Warna latar putih */
+    padding: 20px; /* Tambahkan padding */
+    border-radius: 10px; /* Sudut lebih melengkung */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+    transition: transform 0.3s ease-in-out; /* Animasi lebih halus */
+}
+
+#about ul li:hover {
+    transform: translateY(-8px); /* Efek naik lebih besar */
+}
+
+/* Ikon dan teks */
+#about ul li img {
+    width: 28px;
+}
+
+#about ul li h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+#about ul li p {
+    font-size: 16px;
+    margin: 0;
+    color: #666;
+}
+
+/* Tools yang digunakan */
+#about ul:last-child {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+#about ul:last-child li {
+    background: none;
+    padding: 0;
+}
+
+#about ul:last-child img {
+    width: 40px;
+    transition: transform 0.2s ease-in-out;
+}
+
+#about ul:last-child img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    #about > div {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about > div > div:last-child {
+        text-align: center;
+    }
+
+    #about ul li {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
+
